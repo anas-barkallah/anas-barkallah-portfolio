@@ -120,10 +120,10 @@ GitHub Pages republie automatiquement le site ; la mise à jour apparaît en gé
 
 ## Liste de vérification
 
-- [ ] `index.html` est à la racine du dépôt.
-- [ ] `assets/my_photo.jpg` est présent dans le dépôt et la photo s'affiche en ligne.
-- [ ] Le site s'affiche correctement sur ordinateur et sur téléphone.
-- [ ] Les boutons FR / EN traduisent toutes les sections.
+- [x] `index.html` est à la racine du dépôt.
+- [x] `assets/my_photo.jpg` est présent dans le dépôt et la photo s'affiche en ligne.
+- [x] Le site s'affiche correctement sur ordinateur et sur téléphone.
+- [x] Les boutons FR / EN traduisent toutes les sections.
 - [ ] Le menu mobile s'ouvre et se ferme.
 - [ ] Les liens GitHub et Discord s'ouvrent dans un nouvel onglet.
 - [ ] Les éléments « à compléter » ont été remplis ou laissés volontairement.
