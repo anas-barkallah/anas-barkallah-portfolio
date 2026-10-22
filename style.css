@@ -19,7 +19,6 @@
   --accent-strong: #f3c98c;
   --accent-soft: rgba(233, 184, 114, 0.12);
   --on-accent: #17120a;
-  --placeholder: #c9a46a;
 
   /* Typographie */
   --font-body: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
@@ -517,14 +516,7 @@ ol {
   font-weight: 600;
 }
 
-.card-sub {
-  margin-top: 0.3rem;
-  margin-bottom: 1.2rem;
-  color: var(--text-faint);
-  font-size: 0.9rem;
-}
-
-.card > p:not(.card-sub):not(.project-kind) {
+.card > p:not(.project-kind) {
   color: var(--text-muted);
 }
 
@@ -578,34 +570,6 @@ ol {
   height: 6px;
   border-radius: 2px;
   background: var(--accent);
-}
-
-/* Éléments à compléter : visibles mais clairement signalés */
-.placeholder,
-.placeholder-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.45rem;
-  color: var(--placeholder) !important;
-  font-family: var(--font-mono);
-  font-size: 0.8rem;
-  font-style: normal;
-}
-
-.placeholder::before,
-.placeholder-link::before {
-  content: "";
-  width: 6px;
-  height: 6px;
-  border: 1px dashed var(--placeholder);
-  border-radius: 50%;
-  flex-shrink: 0;
-}
-
-.placeholder-link {
-  padding: 0.35rem 0.75rem;
-  border: 1px dashed rgba(201, 164, 106, 0.5);
-  border-radius: var(--radius-sm);
 }
 
 /* ---------- 8. À propos ---------- */
@@ -677,6 +641,11 @@ ol {
   gap: 1.25rem;
 }
 
+.skills-grid .card-title {
+  margin-bottom: 1.1rem;
+  font-size: 1.05rem;
+}
+
 /* ---------- 10. Expériences (frise) ---------- */
 .timeline {
   position: relative;
@@ -733,6 +702,16 @@ ol {
   font-weight: 500;
 }
 
+.exp-date {
+  margin: 0;
+  padding: 0.2rem 0.65rem;
+  border: 1px solid var(--border-strong);
+  border-radius: 999px;
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  white-space: nowrap;
+}
+
 .exp-card .tag-list {
   margin-top: 1.1rem;
 }
@@ -771,13 +750,8 @@ ol {
 }
 
 /* ---------- 12. Formation ---------- */
-.edu-grid {
-  display: grid;
-  grid-template-columns: 1.4fr 1fr 1fr;
-  gap: 1.25rem;
-}
-
-.edu-main {
+.edu-card {
+  max-width: 640px;
   border-color: var(--border-strong);
 }
 
@@ -839,15 +813,6 @@ a.contact-card:hover {
   overflow-wrap: anywhere;
 }
 
-.contact-card-pending {
-  border-style: dashed;
-  background: transparent;
-}
-
-.contact-card-pending .contact-icon {
-  color: var(--text-faint);
-}
-
 /* ---------- 14. Pied de page ---------- */
 .site-footer {
   padding-block: 2rem;
@@ -872,18 +837,6 @@ a.contact-card:hover {
 @media (max-width: 1000px) {
   .skills-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .skills-grid > :last-child {
-    grid-column: 1 / -1;
-  }
-
-  .edu-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .edu-main {
-    grid-column: 1 / -1;
   }
 }
 
@@ -961,8 +914,7 @@ a.contact-card:hover {
     display: none;
   }
 
-  .skills-grid,
-  .edu-grid {
+  .skills-grid {
     grid-template-columns: 1fr;
   }
 
