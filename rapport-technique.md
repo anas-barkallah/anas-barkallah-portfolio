@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Anas Barkallah — CV numérique</title>
+  <meta name="description" content="CV numérique d'Anas Barkallah, étudiant en troisième année en systèmes embarqués et développement mobile à l'ISET Radès." data-i18n-content="meta.description">
+  <meta name="theme-color" content="#0c0e12">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="a11y.skip">Aller au contenu principal</a>
+
+  <!-- ===================== EN-TÊTE / NAVIGATION ===================== -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#accueil" aria-label="Anas Barkallah — accueil" data-i18n-aria="nav.brandLabel">
+        <span class="brand-mark" aria-hidden="true">AB</span>
+        <span class="brand-name">Anas Barkallah</span>
+      </a>
+
+      <nav class="site-nav" id="site-nav" aria-label="Navigation principale" data-i18n-aria="nav.label">
+        <ul class="nav-list">
+          <li><a href="#accueil" data-i18n="nav.home">Accueil</a></li>
+          <li><a href="#apropos" data-i18n="nav.about">À propos</a></li>
+          <li><a href="#competences" data-i18n="nav.skills">Compétences</a></li>
+          <li><a href="#experiences" data-i18n="nav.experience">Expériences</a></li>
+          <li><a href="#projets" data-i18n="nav.projects">Projets</a></li>
+          <li><a href="#formation" data-i18n="nav.education">Formation</a></li>
+          <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <div class="lang-switch" role="group" aria-label="Choix de la langue" data-i18n-aria="lang.group">
+          <button type="button" class="lang-btn" data-lang="fr" aria-pressed="true" lang="fr" title="Français">FR</button>
+          <button type="button" class="lang-btn" data-lang="en" aria-pressed="false" lang="en" title="English">EN</button>
+        </div>
+
+        <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Ouvrir le menu" data-i18n-aria="nav.open">
+          <span class="menu-toggle-bar" aria-hidden="true"></span>
+          <span class="menu-toggle-bar" aria-hidden="true"></span>
+          <span class="menu-toggle-bar" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ===================== ACCUEIL ===================== -->
+    <section class="hero" id="accueil" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span data-i18n="hero.eyebrow">Étudiant en 3ᵉ année · ISET Radès</span>
+          </p>
+          <h1 class="hero-title" id="hero-title">Anas Barkallah</h1>
+          <p class="hero-role" data-i18n="hero.role">Systèmes embarqués &amp; développement mobile</p>
+          <p class="hero-intro" data-i18n="hero.intro">Étudiant curieux, j'explore plusieurs domaines techniques — de l'électronique embarquée au développement de jeux 2D — avec une envie constante d'apprendre et de progresser.</p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projets" data-i18n="hero.ctaProjects">Voir mes projets</a>
+            <a class="btn btn-ghost" href="https://github.com/anas-barkallah" target="_blank" rel="noopener noreferrer">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.7 5.39-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg>
+              <span>GitHub</span>
+              <span class="visually-hidden" data-i18n="a11y.newTab">(s'ouvre dans un nouvel onglet)</span>
+            </a>
+          </div>
+        </div>
+
+        <figure class="hero-photo">
+          <div class="photo-frame">
+            <img src="assets/my_photo.jpg" width="897" height="2000"
+                 alt="Photo de profil d'Anas Barkallah"
+                 data-i18n-alt="hero.photoAlt">
+          </div>
+          <figcaption class="photo-caption">
+            <span class="mono">ISET Radès</span>
+            <span class="photo-caption-sep" aria-hidden="true">/</span>
+            <span data-i18n="hero.caption">Systèmes embarqués</span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ===================== À PROPOS ===================== -->
+    <section class="section" id="apropos" aria-labelledby="about-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="section-index mono">01</p>
+          <h2 class="section-title" id="about-title" data-i18n="about.title">À propos</h2>
+        </header>
+
+        <div class="about-grid">
+          <div class="about-text">
+            <p class="lead" data-i18n="about.p1">Je suis étudiant en troisième année en systèmes embarqués et développement mobile à l'ISET Radès.</p>
+            <p data-i18n="about.p2">Je suis encore en pleine construction de mon parcours : j'explore différents domaines techniques pour découvrir ceux qui me correspondent le mieux. Chaque expérience — stage, maintenance technique, robotique, jeux 2D — m'apprend quelque chose de nouveau.</p>
+
+            <div class="callout">
+              <h3 class="callout-title" data-i18n="about.goalTitle">Objectif professionnel</h3>
+              <p data-i18n="about.goal">Mon orientation n'est pas encore définie. Pour l'instant, mon objectif est de continuer à apprendre, de consolider mes bases techniques et de gagner en expérience à travers des projets concrets.</p>
+            </div>
+
+            <p data-i18n="about.p3">En dehors des études, j'aime lire des manhua et regarder des anime.</p>
+          </div>
+
+          <dl class="facts">
+            <div class="fact">
+              <dt data-i18n="about.factField">Formation</dt>
+              <dd data-i18n="about.factFieldValue">Systèmes embarqués &amp; développement mobile</dd>
+            </div>
+            <div class="fact">
+              <dt data-i18n="about.factLevel">Niveau</dt>
+              <dd data-i18n="about.factLevelValue">3ᵉ année</dd>
+            </div>
+            <div class="fact">
+              <dt data-i18n="about.factSchool">Établissement</dt>
+              <dd>ISET Radès</dd>
+            </div>
+            <div class="fact">
+              <dt data-i18n="about.factInterests">Centres d'intérêt</dt>
+              <dd data-i18n="about.factInterestsValue">Manhua, anime</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== COMPÉTENCES ===================== -->
+    <section class="section section-alt" id="competences" aria-labelledby="skills-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="section-index mono">02</p>
+          <h2 class="section-title" id="skills-title" data-i18n="skills.title">Compétences</h2>
+        </header>
+
+        <div class="skills-grid">
+          <article class="card">
+            <h3 class="card-title" data-i18n="skills.techTitle">Compétences techniques</h3>
+            <p class="card-sub" data-i18n="skills.techSub">Langages et outils utilisés</p>
+            <ul class="chip-list">
+              <li class="chip">HTML</li>
+              <li class="chip">CSS</li>
+              <li class="chip">JavaScript</li>
+              <li class="chip">Python</li>
+              <li class="chip">Godot</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3 class="card-title" data-i18n="skills.domainsTitle">Domaines explorés</h3>
+            <p class="card-sub" data-i18n="skills.domainsSub">À travers mes expériences et projets</p>
+            <ul class="chip-list">
+              <li class="chip chip-muted" data-i18n="skills.domain1">Systèmes embarqués (ESP32)</li>
+              <li class="chip chip-muted" data-i18n="skills.domain2">Robotique de base</li>
+              <li class="chip chip-muted" data-i18n="skills.domain3">Jeux mobiles 2D</li>
+              <li class="chip chip-muted" data-i18n="skills.domain4">Serveur de sauvegarde</li>
+              <li class="chip chip-muted" data-i18n="skills.domain5">Maintenance technique</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3 class="card-title" data-i18n="skills.softTitle">Compétences transversales</h3>
+            <p class="card-sub" data-i18n="skills.softSub">Qualités développées au fil de mes expériences</p>
+            <ul class="plain-list">
+              <li data-i18n="skills.soft1">Curiosité et envie d'apprendre</li>
+              <li data-i18n="skills.soft2">Travail en équipe sur des projets techniques</li>
+              <li data-i18n="skills.soft3">Adaptation à des domaines variés</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== EXPÉRIENCES ===================== -->
+    <section class="section" id="experiences" aria-labelledby="exp-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="section-index mono">03</p>
+          <h2 class="section-title" id="exp-title" data-i18n="exp.title">Expériences</h2>
+        </header>
+
+        <ol class="timeline">
+          <li class="timeline-item">
+            <article class="card exp-card">
+              <div class="exp-head">
+                <div>
+                  <h3 class="card-title">Sama Consulting</h3>
+                  <p class="exp-role" data-i18n="exp.sama.role">Stage</p>
+                </div>
+                <p class="placeholder">2026</p>
+              </div>
+              <p data-i18n="exp.sama.desc">Participation à la mise en place d'un serveur de sauvegarde destiné aux données de l'entreprise.</p>
+              <ul class="tag-list" aria-label="Domaines" data-i18n-aria="common.domains">
+                <li class="tag" data-i18n="exp.sama.tag1">Serveur de sauvegarde</li>
+                <li class="tag" data-i18n="exp.sama.tag2">Données d'entreprise</li>
+              </ul>
+            </article>
+          </li>
+
+          <li class="timeline-item">
+            <article class="card exp-card">
+              <div class="exp-head">
+                <div>
+                  <h3 class="card-title">Somacs</h3>
+                  <p class="exp-role" data-i18n="exp.somacs.role">Maintenance technique</p>
+                </div>
+                <p class="placeholder">2022 to 2023</p>
+              </div>
+              <p data-i18n="exp.somacs.desc">Intervention sur la réparation d'équipements et de machines de garage.</p>
+              <ul class="tag-list" aria-label="Domaines" data-i18n-aria="common.domains">
+                <li class="tag" data-i18n="exp.somacs.tag1">Maintenance</li>
+                <li class="tag" data-i18n="exp.somacs.tag2">Équipements de garage</li>
+              </ul>
+            </article>
+          </li>
+
+          <li class="timeline-item">
+            <article class="card exp-card">
+              <div class="exp-head">
+                <div>
+                  <h3 class="card-title">Robotica</h3>
+                  <p class="exp-role" data-i18n="exp.robotica.role">Jeux mobiles 2D &amp; robotique de base</p>
+                </div>
+                <p class="placeholder">2020</p>
+              </div>
+              <p data-i18n="exp.robotica.desc">Participation au développement de jeux mobiles en 2D et à la construction de robots simples, notamment un robot télécommandé et un robot suiveur de ligne.</p>
+              <ul class="tag-list" aria-label="Domaines" data-i18n-aria="common.domains">
+                <li class="tag" data-i18n="exp.robotica.tag1">Jeux mobiles 2D</li>
+                <li class="tag" data-i18n="exp.robotica.tag2">Robot télécommandé</li>
+                <li class="tag" data-i18n="exp.robotica.tag3">Robot suiveur de ligne</li>
+              </ul>
+            </article>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===================== PROJETS ===================== -->
+    <section class="section section-alt" id="projets" aria-labelledby="projects-title">
+      <div class="container">
+        <header class="section-head">   
+          <p class="section-index mono">04</p>
+          <h2 class="section-title" id="projects-title" data-i18n="projects.title">Projets</h2>
+        </header>
+
+        <div class="projects-grid">
+          <article class="card project-card">
+            <p class="project-kind mono" data-i18n="projects.wifi.kind">Systèmes embarqués</p>
+            <h3 class="card-title">WiFi-Channel-Monitor</h3>
+            <p data-i18n="projects.wifi.desc">Projet réalisé avec une carte ESP32, consacré — comme son nom l'indique — à la surveillance des canaux Wi-Fi.</p>
+            <p class="placeholder" data-i18n="projects.wifi.details">Description détaillée des fonctionnalités à compléter.</p>
+            <ul class="tag-list" aria-label="Technologies" data-i18n-aria="common.tech">
+              <li class="tag">ESP32</li>
+              <li class="tag">Wi-Fi</li>
+            </ul>
+            <div class="project-links">
+              <span class="placeholder-link" data-i18n="projects.repoTbd">Lien du dépôt à compléter</span>
+            </div>
+          </article>
+
+          <article class="card project-card">
+            <p class="project-kind mono" data-i18n="projects.robotica.kind">Robotica</p>
+            <h3 class="card-title" data-i18n="projects.robotica.title">Jeux mobiles 2D &amp; robotique de base</h3>
+            <p data-i18n="projects.robotica.desc">Travaux réalisés dans le cadre de mon expérience chez Robotica : participation au développement de jeux mobiles en 2D et à la construction d'un robot télécommandé et d'un robot suiveur de ligne.</p>
+            <ul class="tag-list" aria-label="Domaines" data-i18n-aria="common.domains">
+              <li class="tag" data-i18n="projects.robotica.tag1">Jeux 2D</li>
+              <li class="tag" data-i18n="projects.robotica.tag2">Robotique</li>
+            </ul>
+            <div class="project-links">
+              <a class="text-link" href="#experiences" data-i18n="projects.robotica.link">Voir l'expérience Robotica</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FORMATION ===================== -->
+    <section class="section" id="formation" aria-labelledby="edu-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="section-index mono">05</p>
+          <h2 class="section-title" id="edu-title" data-i18n="edu.title">Formation</h2>
+        </header>
+
+        <div class="edu-grid">
+          <article class="card edu-card edu-main">
+            <p class="project-kind mono" data-i18n="edu.current">En cours</p>
+            <h3 class="card-title">ISET Radès</h3>
+            <p class="edu-field" data-i18n="edu.field">Systèmes embarqués &amp; développement mobile</p>
+            <p data-i18n="edu.level">Étudiant en troisième année.</p>
+            <p class="placeholder" data-i18n="2027">Période à compléter</p>
+          </article>
+
+          <article class="card edu-card">
+            <h3 class="card-title" data-i18n="edu.bacTitle">Baccalauréat</h3>
+            <p class="placeholder" data-i18n="edu.bacTbd">Section, établissement et année à compléter</p>
+          </article>
+
+          <article class="card edu-card">
+            <h3 class="card-title" data-i18n="edu.certTitle">Certifications &amp; formations complémentaires</h3>
+            <p class="placeholder" data-i18n="edu.certTbd">À compléter le cas échéant</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section class="section section-alt" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="section-index mono">06</p>
+          <h2 class="section-title" id="contact-title" data-i18n="contact.title">Contact</h2>
+        </header>
+
+        <p class="contact-intro" data-i18n="contact.intro">Le meilleur moyen de suivre mon travail est mon profil GitHub. Vous pouvez aussi me contacter sur Discord.</p>
+
+        <ul class="contact-grid">
+          <li>
+            <a class="card contact-card" href="https://github.com/anas-barkallah" target="_blank" rel="noopener noreferrer">
+              <svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.7 5.39-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg>
+              <span class="contact-label">GitHub</span>
+              <span class="contact-value mono">github.com/anas-barkallah</span>
+              <span class="visually-hidden" data-i18n="a11y.newTab">(s'ouvre dans un nouvel onglet)</span>
+            </a>
+          </li>
+          <li>
+            <a class="card contact-card" href="https://discord.com/users/740523979567267851" target="_blank" rel="noopener noreferrer">
+              <svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M20.32 4.37A19.8 19.8 0 0 0 15.4 2.8a13.7 13.7 0 0 0-.63 1.3 18.4 18.4 0 0 0-5.53 0 13.6 13.6 0 0 0-.64-1.3 19.7 19.7 0 0 0-4.92 1.53C.56 9.04-.29 13.58.13 18.06a19.9 19.9 0 0 0 6.04 3.05c.49-.66.92-1.36 1.29-2.1a12.9 12.9 0 0 1-2.03-.97l.5-.39a14.2 14.2 0 0 0 12.14 0l.5.39c-.65.38-1.33.71-2.04.97.37.74.8 1.44 1.29 2.1a19.8 19.8 0 0 0 6.05-3.05c.5-5.2-.85-9.7-3.55-13.69ZM8.02 15.33c-1.18 0-2.16-1.08-2.16-2.42 0-1.33.96-2.42 2.16-2.42 1.21 0 2.18 1.1 2.16 2.42 0 1.34-.96 2.42-2.16 2.42Zm7.97 0c-1.18 0-2.16-1.08-2.16-2.42 0-1.33.96-2.42 2.16-2.42 1.21 0 2.18 1.1 2.16 2.42 0 1.34-.95 2.42-2.16 2.42Z"/></svg>
+              <span class="contact-label">Discord</span>
+              <span class="contact-value" data-i18n="contact.discordValue">Voir mon profil Discord</span>
+              <span class="visually-hidden" data-i18n="a11y.newTab">(s'ouvre dans un nouvel onglet)</span>
+            </a>
+          </li>
+          <li>
+            <div class="card contact-card contact-card-pending">
+              <svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M3 6.5h18v11H3zM3.5 7l8.5 6.5L20.5 7"/></svg>
+              <span class="contact-label">E-mail</span>
+              <span class="contact-value placeholder" data-i18n="contact.emailTbd">Adresse e-mail à compléter</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== PIED DE PAGE ===================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> Anas Barkallah. <span data-i18n="footer.built">Site réalisé en HTML, CSS et JavaScript.</span></p>
+      <a class="text-link" href="#accueil" data-i18n="footer.top">Retour en haut</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
