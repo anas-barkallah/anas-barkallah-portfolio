@@ -1,363 +1,336 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Anas Barkallah — CV numérique</title>
-  <meta name="description" content="CV numérique d'Anas Barkallah, étudiant en troisième année en systèmes embarqués et développement mobile à l'ISET Radès." data-i18n-content="meta.description">
-  <meta name="theme-color" content="#0c0e12">
+| Information | Valeur |
+|---|---|
+| Nom et prénom | Anas Barkallah |
+| Lien du dépôt GitHub | [Lien du dépôt à compléter] |
+| Lien du site en ligne | [Lien du site publié à compléter] |
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+# Projet Déploiement Web — Mise en ligne d'un site statique : CV numérique de l'étudiant
 
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <a class="skip-link" href="#main" data-i18n="a11y.skip">Aller au contenu principal</a>
+**Établissement :** ISET Radès
+**Module :** Atelier Déploiement Web
+**Enseignante :** Mme Mariem Nasri
+**Étudiant :** Anas Barkallah — 3ᵉ année, Systèmes embarqués & développement mobile
+**Date :** [Date de remise à compléter]
 
-  <!-- ===================== EN-TÊTE / NAVIGATION ===================== -->
-  <header class="site-header" id="top">
-    <div class="container header-inner">
-      <a class="brand" href="#accueil" aria-label="Anas Barkallah — accueil" data-i18n-aria="nav.brandLabel">
-        <span class="brand-mark" aria-hidden="true">AB</span>
-        <span class="brand-name">Anas Barkallah</span>
-      </a>
+---
 
-      <nav class="site-nav" id="site-nav" aria-label="Navigation principale" data-i18n-aria="nav.label">
-        <ul class="nav-list">
-          <li><a href="#accueil" data-i18n="nav.home">Accueil</a></li>
-          <li><a href="#apropos" data-i18n="nav.about">À propos</a></li>
-          <li><a href="#competences" data-i18n="nav.skills">Compétences</a></li>
-          <li><a href="#experiences" data-i18n="nav.experience">Expériences</a></li>
-          <li><a href="#projets" data-i18n="nav.projects">Projets</a></li>
-          <li><a href="#formation" data-i18n="nav.education">Formation</a></li>
-          <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
-        </ul>
-      </nav>
+## Sommaire
 
-      <div class="header-actions">
-        <div class="lang-switch" role="group" aria-label="Choix de la langue" data-i18n-aria="lang.group">
-          <button type="button" class="lang-btn" data-lang="fr" aria-pressed="true" lang="fr" title="Français">FR</button>
-          <button type="button" class="lang-btn" data-lang="en" aria-pressed="false" lang="en" title="English">EN</button>
-        </div>
+1. Introduction
+2. Objectifs du projet
+3. Description et sections du site
+4. Outils et technologies
+5. Structure des fichiers du projet
+6. Création du dépôt GitHub
+7. Déploiement via l'interface GitHub
+8. Déploiement via Visual Studio Code
+9. Déploiement via le terminal
+10. Vérification du site en ligne
+11. Mise à jour du site après publication
+12. Problèmes fréquents et solutions
+13. Conclusion
 
-        <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Ouvrir le menu" data-i18n-aria="nav.open">
-          <span class="menu-toggle-bar" aria-hidden="true"></span>
-          <span class="menu-toggle-bar" aria-hidden="true"></span>
-          <span class="menu-toggle-bar" aria-hidden="true"></span>
-        </button>
-      </div>
-    </div>
-  </header>
+> **Insertion des captures d'écran.** Les emplacements prévus pour les captures sont signalés par le symbole 📷. Pour en ajouter une, enregistrer l'image dans un dossier `captures/` à la racine du dépôt (par exemple `captures/01-creation-depot.png`), puis remplacer la ligne 📷 par :
+> `![Création du dépôt sur GitHub](captures/01-creation-depot.png)`
+> Si le rapport est remis en Word ou en PDF, insérer simplement l'image à l'endroit indiqué.
 
-  <main id="main">
-    <!-- ===================== ACCUEIL ===================== -->
-    <section class="hero" id="accueil" aria-labelledby="hero-title">
-      <div class="container hero-grid">
-        <div class="hero-text">
-          <p class="eyebrow">
-            <span class="status-dot" aria-hidden="true"></span>
-            <span data-i18n="hero.eyebrow">Étudiant en 3ᵉ année · ISET Radès</span>
-          </p>
-          <h1 class="hero-title" id="hero-title">Anas Barkallah</h1>
-          <p class="hero-role" data-i18n="hero.role">Systèmes embarqués &amp; développement mobile</p>
-          <p class="hero-intro" data-i18n="hero.intro">Étudiant curieux, j'explore plusieurs domaines techniques — de l'électronique embarquée au développement de jeux 2D — avec une envie constante d'apprendre et de progresser.</p>
+---
 
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#projets" data-i18n="hero.ctaProjects">Voir mes projets</a>
-            <a class="btn btn-ghost" href="https://github.com/anas-barkallah" target="_blank" rel="noopener noreferrer">
-              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.7 5.39-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg>
-              <span>GitHub</span>
-              <span class="visually-hidden" data-i18n="a11y.newTab">(s'ouvre dans un nouvel onglet)</span>
-            </a>
-          </div>
-        </div>
+## 1. Introduction
 
-        <figure class="hero-photo">
-          <div class="photo-frame">
-            <img src="assets/my_photo.jpg" width="897" height="2000"
-                 alt="Photo de profil d'Anas Barkallah"
-                 data-i18n-alt="hero.photoAlt">
-          </div>
-          <figcaption class="photo-caption">
-            <span class="mono">ISET Radès</span>
-            <span class="photo-caption-sep" aria-hidden="true">/</span>
-            <span data-i18n="hero.caption">Systèmes embarqués</span>
-          </figcaption>
-        </figure>
-      </div>
-    </section>
+Dans le cadre de l'atelier Déploiement Web à l'ISET Radès, il m'a été demandé de concevoir un site web statique présentant mon CV numérique, puis de le mettre en ligne grâce à GitHub et au service gratuit GitHub Pages.
 
-    <!-- ===================== À PROPOS ===================== -->
-    <section class="section" id="apropos" aria-labelledby="about-title">
-      <div class="container">
-        <header class="section-head">
-          <p class="section-index mono">01</p>
-          <h2 class="section-title" id="about-title" data-i18n="about.title">À propos</h2>
-        </header>
+Un site statique est composé uniquement de fichiers HTML, CSS et, si nécessaire, JavaScript. Ces fichiers sont envoyés tels quels au navigateur : aucun serveur applicatif ni base de données n'est nécessaire. Ce type de site est donc simple à héberger, rapide à charger et facile à maintenir.
 
-        <div class="about-grid">
-          <div class="about-text">
-            <p class="lead" data-i18n="about.p1">Je suis étudiant en troisième année en systèmes embarqués et développement mobile à l'ISET Radès.</p>
-            <p data-i18n="about.p2">Je suis encore en pleine construction de mon parcours : j'explore différents domaines techniques pour découvrir ceux qui me correspondent le mieux. Chaque expérience — stage, maintenance technique, robotique, jeux 2D — m'apprend quelque chose de nouveau.</p>
+Ce rapport décrit le contenu du site, les outils utilisés, la structure du projet, les trois méthodes de mise en ligne (interface web de GitHub, Visual Studio Code et ligne de commande) ainsi que la procédure de mise à jour du site après sa publication.
 
-            <div class="callout">
-              <h3 class="callout-title" data-i18n="about.goalTitle">Objectif professionnel</h3>
-              <p data-i18n="about.goal">Mon orientation n'est pas encore définie. Pour l'instant, mon objectif est de continuer à apprendre, de consolider mes bases techniques et de gagner en expérience à travers des projets concrets.</p>
-            </div>
+## 2. Objectifs du projet
 
-            <p data-i18n="about.p3">En dehors des études, j'aime lire des manhua et regarder des anime.</p>
-          </div>
+Les objectifs fixés par le sujet sont les suivants :
 
-          <dl class="facts">
-            <div class="fact">
-              <dt data-i18n="about.factField">Formation</dt>
-              <dd data-i18n="about.factFieldValue">Systèmes embarqués &amp; développement mobile</dd>
-            </div>
-            <div class="fact">
-              <dt data-i18n="about.factLevel">Niveau</dt>
-              <dd data-i18n="about.factLevelValue">3ᵉ année</dd>
-            </div>
-            <div class="fact">
-              <dt data-i18n="about.factSchool">Établissement</dt>
-              <dd>ISET Radès</dd>
-            </div>
-            <div class="fact">
-              <dt data-i18n="about.factInterests">Centres d'intérêt</dt>
-              <dd data-i18n="about.factInterestsValue">Manhua, anime</dd>
-            </div>
-          </dl>
-        </div>
-      </div>
-    </section>
+- créer un dépôt GitHub et y héberger les fichiers du site ;
+- utiliser Git pour versionner le projet (`add`, `commit`, `push`) ;
+- publier gratuitement le site avec GitHub Pages ;
+- mettre à jour le site en ligne à partir de trois interfaces : GitHub, VS Code et le terminal ;
+- rédiger un rapport technique décrivant la démarche suivie.
 
-    <!-- ===================== COMPÉTENCES ===================== -->
-    <section class="section section-alt" id="competences" aria-labelledby="skills-title">
-      <div class="container">
-        <header class="section-head">
-          <p class="section-index mono">02</p>
-          <h2 class="section-title" id="skills-title" data-i18n="skills.title">Compétences</h2>
-        </header>
+À titre personnel, j'ai également cherché à obtenir un site :
 
-        <div class="skills-grid">
-          <article class="card">
-            <h3 class="card-title" data-i18n="skills.techTitle">Compétences techniques</h3>
-            <p class="card-sub" data-i18n="skills.techSub">Langages et outils utilisés</p>
-            <ul class="chip-list">
-              <li class="chip">HTML</li>
-              <li class="chip">CSS</li>
-              <li class="chip">JavaScript</li>
-              <li class="chip">Python</li>
-              <li class="chip">Godot</li>
-            </ul>
-          </article>
+- lisible sur ordinateur comme sur téléphone (design responsive) ;
+- disponible en français et en anglais ;
+- accessible (navigation au clavier, textes alternatifs, contrastes suffisants) ;
+- simple à maintenir, sans framework ni outil de compilation.
 
-          <article class="card">
-            <h3 class="card-title" data-i18n="skills.domainsTitle">Domaines explorés</h3>
-            <p class="card-sub" data-i18n="skills.domainsSub">À travers mes expériences et projets</p>
-            <ul class="chip-list">
-              <li class="chip chip-muted" data-i18n="skills.domain1">Systèmes embarqués (ESP32)</li>
-              <li class="chip chip-muted" data-i18n="skills.domain2">Robotique de base</li>
-              <li class="chip chip-muted" data-i18n="skills.domain3">Jeux mobiles 2D</li>
-              <li class="chip chip-muted" data-i18n="skills.domain4">Serveur de sauvegarde</li>
-              <li class="chip chip-muted" data-i18n="skills.domain5">Maintenance technique</li>
-            </ul>
-          </article>
+## 3. Description et sections du site
 
-          <article class="card">
-            <h3 class="card-title" data-i18n="skills.softTitle">Compétences transversales</h3>
-            <p class="card-sub" data-i18n="skills.softSub">Qualités développées au fil de mes expériences</p>
-            <ul class="plain-list">
-              <li data-i18n="skills.soft1">Curiosité et envie d'apprendre</li>
-              <li data-i18n="skills.soft2">Travail en équipe sur des projets techniques</li>
-              <li data-i18n="skills.soft3">Adaptation à des domaines variés</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
+Le site est une page unique de présentation professionnelle. Un menu de navigation fixé en haut de l'écran permet d'accéder directement à chaque section. Sur téléphone, ce menu est remplacé par un bouton qui ouvre une liste déroulante.
 
-    <!-- ===================== EXPÉRIENCES ===================== -->
-    <section class="section" id="experiences" aria-labelledby="exp-title">
-      <div class="container">
-        <header class="section-head">
-          <p class="section-index mono">03</p>
-          <h2 class="section-title" id="exp-title" data-i18n="exp.title">Expériences</h2>
-        </header>
+| Section | Contenu |
+|---|---|
+| **Accueil** | Photo de profil, nom, intitulé de la formation, courte présentation, bouton vers les projets et lien vers GitHub. |
+| **À propos** | Présentation : étudiant en 3ᵉ année qui explore plusieurs domaines techniques. Objectif professionnel (continuer à apprendre et gagner en expérience, orientation encore ouverte). Centres d'intérêt : manhua et anime. |
+| **Compétences** | Compétences techniques (HTML, CSS, JavaScript, Python, Godot), domaines explorés (systèmes embarqués avec ESP32, robotique de base, jeux mobiles 2D, serveur de sauvegarde, maintenance technique) et compétences transversales. Aucun niveau ni pourcentage n'est affiché. |
+| **Expériences** | Sama Consulting (stage — participation à la mise en place d'un serveur de sauvegarde des données de l'entreprise), Somacs (maintenance technique — réparation d'équipements et de machines de garage), Robotica (participation au développement de jeux mobiles 2D et à la construction d'un robot télécommandé et d'un robot suiveur de ligne). Les périodes sont indiquées « à compléter ». |
+| **Projets** | WiFi-Channel-Monitor (projet basé sur un ESP32, lien du dépôt à compléter) et les travaux de jeux mobiles 2D et de robotique de base réalisés chez Robotica. |
+| **Formation** | ISET Radès — Systèmes embarqués & développement mobile, 3ᵉ année. Baccalauréat et certifications : à compléter. |
+| **Contact** | Lien vers le profil GitHub (lien principal), lien vers le profil Discord, adresse e-mail à compléter. Les liens externes s'ouvrent dans un nouvel onglet. |
+| **Pied de page** | Nom et année courante, calculée automatiquement en JavaScript. |
 
-        <ol class="timeline">
-          <li class="timeline-item">
-            <article class="card exp-card">
-              <div class="exp-head">
-                <div>
-                  <h3 class="card-title">Sama Consulting</h3>
-                  <p class="exp-role" data-i18n="exp.sama.role">Stage</p>
-                </div>
-                <p class="placeholder">2026</p>
-              </div>
-              <p data-i18n="exp.sama.desc">Participation à la mise en place d'un serveur de sauvegarde destiné aux données de l'entreprise.</p>
-              <ul class="tag-list" aria-label="Domaines" data-i18n-aria="common.domains">
-                <li class="tag" data-i18n="exp.sama.tag1">Serveur de sauvegarde</li>
-                <li class="tag" data-i18n="exp.sama.tag2">Données d'entreprise</li>
-              </ul>
-            </article>
-          </li>
+**Fonctionnalités principales :**
 
-          <li class="timeline-item">
-            <article class="card exp-card">
-              <div class="exp-head">
-                <div>
-                  <h3 class="card-title">Somacs</h3>
-                  <p class="exp-role" data-i18n="exp.somacs.role">Maintenance technique</p>
-                </div>
-                <p class="placeholder">2022 to 2023</p>
-              </div>
-              <p data-i18n="exp.somacs.desc">Intervention sur la réparation d'équipements et de machines de garage.</p>
-              <ul class="tag-list" aria-label="Domaines" data-i18n-aria="common.domains">
-                <li class="tag" data-i18n="exp.somacs.tag1">Maintenance</li>
-                <li class="tag" data-i18n="exp.somacs.tag2">Équipements de garage</li>
-              </ul>
-            </article>
-          </li>
+- **Bilinguisme FR/EN :** deux boutons « FR » et « EN » changent la langue de tout le site sans recharger la page : textes, menu, boutons, expériences, projets, pied de page, texte alternatif de la photo et libellés d'accessibilité. L'attribut `lang` de la balise `<html>` est mis à jour et le choix est mémorisé dans le navigateur.
+- **Menu mobile :** le bouton du menu indique son état (`aria-expanded`), se ferme après un clic sur un lien, avec la touche Échap ou en cliquant en dehors.
+- **Section active :** le lien du menu correspondant à la section visible est mis en évidence.
+- **Accessibilité :** lien d'évitement « Aller au contenu principal », focus visible, structure sémantique (`header`, `nav`, `main`, `section`, `footer`), respect de la préférence « réduire les animations ».
 
-          <li class="timeline-item">
-            <article class="card exp-card">
-              <div class="exp-head">
-                <div>
-                  <h3 class="card-title">Robotica</h3>
-                  <p class="exp-role" data-i18n="exp.robotica.role">Jeux mobiles 2D &amp; robotique de base</p>
-                </div>
-                <p class="placeholder">2020</p>
-              </div>
-              <p data-i18n="exp.robotica.desc">Participation au développement de jeux mobiles en 2D et à la construction de robots simples, notamment un robot télécommandé et un robot suiveur de ligne.</p>
-              <ul class="tag-list" aria-label="Domaines" data-i18n-aria="common.domains">
-                <li class="tag" data-i18n="exp.robotica.tag1">Jeux mobiles 2D</li>
-                <li class="tag" data-i18n="exp.robotica.tag2">Robot télécommandé</li>
-                <li class="tag" data-i18n="exp.robotica.tag3">Robot suiveur de ligne</li>
-              </ul>
-            </article>
-          </li>
-        </ol>
-      </div>
-    </section>
+📷 *Capture d'écran à insérer : page d'accueil du site sur ordinateur.*
 
-    <!-- ===================== PROJETS ===================== -->
-    <section class="section section-alt" id="projets" aria-labelledby="projects-title">
-      <div class="container">
-        <header class="section-head">   
-          <p class="section-index mono">04</p>
-          <h2 class="section-title" id="projects-title" data-i18n="projects.title">Projets</h2>
-        </header>
+📷 *Capture d'écran à insérer : site affiché sur téléphone, menu mobile ouvert.*
 
-        <div class="projects-grid">
-          <article class="card project-card">
-            <p class="project-kind mono" data-i18n="projects.wifi.kind">Systèmes embarqués</p>
-            <h3 class="card-title">WiFi-Channel-Monitor</h3>
-            <p data-i18n="projects.wifi.desc">Projet réalisé avec une carte ESP32, consacré — comme son nom l'indique — à la surveillance des canaux Wi-Fi.</p>
-            <p class="placeholder" data-i18n="projects.wifi.details">Description détaillée des fonctionnalités à compléter.</p>
-            <ul class="tag-list" aria-label="Technologies" data-i18n-aria="common.tech">
-              <li class="tag">ESP32</li>
-              <li class="tag">Wi-Fi</li>
-            </ul>
-            <div class="project-links">
-              <span class="placeholder-link" data-i18n="projects.repoTbd">Lien du dépôt à compléter</span>
-            </div>
-          </article>
+## 4. Outils et technologies
 
-          <article class="card project-card">
-            <p class="project-kind mono" data-i18n="projects.robotica.kind">Robotica</p>
-            <h3 class="card-title" data-i18n="projects.robotica.title">Jeux mobiles 2D &amp; robotique de base</h3>
-            <p data-i18n="projects.robotica.desc">Travaux réalisés dans le cadre de mon expérience chez Robotica : participation au développement de jeux mobiles en 2D et à la construction d'un robot télécommandé et d'un robot suiveur de ligne.</p>
-            <ul class="tag-list" aria-label="Domaines" data-i18n-aria="common.domains">
-              <li class="tag" data-i18n="projects.robotica.tag1">Jeux 2D</li>
-              <li class="tag" data-i18n="projects.robotica.tag2">Robotique</li>
-            </ul>
-            <div class="project-links">
-              <a class="text-link" href="#experiences" data-i18n="projects.robotica.link">Voir l'expérience Robotica</a>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
+| Outil | Rôle dans le projet |
+|---|---|
+| **HTML5** | Structure du site : sections, titres, listes, liens, image de profil. Utilisation de balises sémantiques pour l'accessibilité et le référencement. |
+| **CSS3** | Mise en forme : variables CSS (couleurs, espacements), mise en page avec Grid et Flexbox, *media queries* pour l'adaptation aux écrans, recadrage de la photo avec `object-fit: cover`. |
+| **JavaScript** | Interactions : changement de langue, menu mobile, lien actif, année du pied de page. Code « vanilla », sans bibliothèque. Les textes sont modifiés avec `textContent` (pas d'injection de HTML). |
+| **Visual Studio Code** | Éditeur de code utilisé pour créer et modifier les fichiers, avec un terminal intégré et une interface Git (onglet *Source Control*). |
+| **Git** | Système de gestion de versions installé en local : il enregistre l'historique des modifications (commits) et permet de les envoyer vers GitHub. |
+| **GitHub** | Plateforme d'hébergement du dépôt distant ; offre une interface web pour gérer les fichiers, l'historique et les paramètres. |
+| **GitHub Pages** | Service gratuit de GitHub qui publie un site statique directement à partir d'une branche du dépôt. |
 
-    <!-- ===================== FORMATION ===================== -->
-    <section class="section" id="formation" aria-labelledby="edu-title">
-      <div class="container">
-        <header class="section-head">
-          <p class="section-index mono">05</p>
-          <h2 class="section-title" id="edu-title" data-i18n="edu.title">Formation</h2>
-        </header>
+## 5. Structure des fichiers du projet
 
-        <div class="edu-grid">
-          <article class="card edu-card edu-main">
-            <p class="project-kind mono" data-i18n="edu.current">En cours</p>
-            <h3 class="card-title">ISET Radès</h3>
-            <p class="edu-field" data-i18n="edu.field">Systèmes embarqués &amp; développement mobile</p>
-            <p data-i18n="edu.level">Étudiant en troisième année.</p>
-            <p class="placeholder" data-i18n="2027">Période à compléter</p>
-          </article>
+```text
+anas-barkallah-portfolio/
+├── index.html            ← page d'entrée du site
+├── style.css             ← feuille de style
+├── script.js             ← traductions FR/EN et interactions
+├── README.md             ← présentation du dépôt
+├── rapport-technique.md  ← ce rapport
+└── assets/
+    └── my_photo.jpg      ← photo de profil
+```
 
-          <article class="card edu-card">
-            <h3 class="card-title" data-i18n="edu.bacTitle">Baccalauréat</h3>
-            <p class="placeholder" data-i18n="edu.bacTbd">Section, établissement et année à compléter</p>
-          </article>
+Points importants :
 
-          <article class="card edu-card">
-            <h3 class="card-title" data-i18n="edu.certTitle">Certifications &amp; formations complémentaires</h3>
-            <p class="placeholder" data-i18n="edu.certTbd">À compléter le cas échéant</p>
-          </article>
-        </div>
-      </div>
-    </section>
+- Le fichier d'entrée s'appelle **`index.html`** et se trouve **à la racine** du dépôt : c'est la condition pour que GitHub Pages l'affiche automatiquement.
+- La photo est un vrai fichier du dépôt, `assets/my_photo.jpg`, appelée dans `index.html` par un **chemin relatif** : `src="assets/my_photo.jpg"`. Le site fonctionne ainsi en local comme en ligne.
+- Les noms de fichiers sont en minuscules et sans espaces. GitHub Pages distingue les majuscules des minuscules : `My_Photo.JPG` et `my_photo.jpg` sont deux fichiers différents.
 
-    <!-- ===================== CONTACT ===================== -->
-    <section class="section section-alt" id="contact" aria-labelledby="contact-title">
-      <div class="container">
-        <header class="section-head">
-          <p class="section-index mono">06</p>
-          <h2 class="section-title" id="contact-title" data-i18n="contact.title">Contact</h2>
-        </header>
+## 6. Création du dépôt GitHub
 
-        <p class="contact-intro" data-i18n="contact.intro">Le meilleur moyen de suivre mon travail est mon profil GitHub. Vous pouvez aussi me contacter sur Discord.</p>
+1. Se connecter à son compte sur [github.com](https://github.com) (profil : `https://github.com/anas-barkallah`).
+2. Cliquer sur le bouton **+** en haut à droite, puis **New repository**.
+3. Renseigner le **Repository name**, par exemple `anas-barkallah-portfolio`.
+4. Ajouter éventuellement une description : « CV numérique — projet Déploiement Web ».
+5. Choisir la visibilité **Public** (GitHub Pages est gratuit pour les dépôts publics).
+6. Pour la méthode par VS Code ou par le terminal, **ne pas** cocher *Add a README file* : le projet local contient déjà son README, ce qui évite un conflit lors du premier `push`.
+7. Cliquer sur **Create repository**.
 
-        <ul class="contact-grid">
-          <li>
-            <a class="card contact-card" href="https://github.com/anas-barkallah" target="_blank" rel="noopener noreferrer">
-              <svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.7 5.39-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg>
-              <span class="contact-label">GitHub</span>
-              <span class="contact-value mono">github.com/anas-barkallah</span>
-              <span class="visually-hidden" data-i18n="a11y.newTab">(s'ouvre dans un nouvel onglet)</span>
-            </a>
-          </li>
-          <li>
-            <a class="card contact-card" href="https://discord.com/users/740523979567267851" target="_blank" rel="noopener noreferrer">
-              <svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M20.32 4.37A19.8 19.8 0 0 0 15.4 2.8a13.7 13.7 0 0 0-.63 1.3 18.4 18.4 0 0 0-5.53 0 13.6 13.6 0 0 0-.64-1.3 19.7 19.7 0 0 0-4.92 1.53C.56 9.04-.29 13.58.13 18.06a19.9 19.9 0 0 0 6.04 3.05c.49-.66.92-1.36 1.29-2.1a12.9 12.9 0 0 1-2.03-.97l.5-.39a14.2 14.2 0 0 0 12.14 0l.5.39c-.65.38-1.33.71-2.04.97.37.74.8 1.44 1.29 2.1a19.8 19.8 0 0 0 6.05-3.05c.5-5.2-.85-9.7-3.55-13.69ZM8.02 15.33c-1.18 0-2.16-1.08-2.16-2.42 0-1.33.96-2.42 2.16-2.42 1.21 0 2.18 1.1 2.16 2.42 0 1.34-.96 2.42-2.16 2.42Zm7.97 0c-1.18 0-2.16-1.08-2.16-2.42 0-1.33.96-2.42 2.16-2.42 1.21 0 2.18 1.1 2.16 2.42 0 1.34-.95 2.42-2.16 2.42Z"/></svg>
-              <span class="contact-label">Discord</span>
-              <span class="contact-value" data-i18n="contact.discordValue">Voir mon profil Discord</span>
-              <span class="visually-hidden" data-i18n="a11y.newTab">(s'ouvre dans un nouvel onglet)</span>
-            </a>
-          </li>
-          <li>
-            <div class="card contact-card contact-card-pending">
-              <svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M3 6.5h18v11H3zM3.5 7l8.5 6.5L20.5 7"/></svg>
-              <span class="contact-label">E-mail</span>
-              <span class="contact-value placeholder" data-i18n="contact.emailTbd">Adresse e-mail à compléter</span>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
-  </main>
+📷 *Capture d'écran à insérer : formulaire de création du dépôt.*
 
-  <!-- ===================== PIED DE PAGE ===================== -->
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>© <span id="year">2026</span> Anas Barkallah. <span data-i18n="footer.built">Site réalisé en HTML, CSS et JavaScript.</span></p>
-      <a class="text-link" href="#accueil" data-i18n="footer.top">Retour en haut</a>
-    </div>
-  </footer>
+## 7. Déploiement via l'interface GitHub
 
-  <script src="script.js"></script>
-</body>
-</html>
+Cette méthode n'utilise que le navigateur.
+
+### 7.1 Envoi des fichiers
+
+1. Ouvrir le dépôt nouvellement créé.
+2. Cliquer sur **uploading an existing file** (ou **Add file → Upload files**).
+3. Ouvrir le dossier du projet sur l'ordinateur et **glisser-déposer son contenu** dans la page : `index.html`, `style.css`, `script.js`, `README.md`, `rapport-technique.md` **et le dossier `assets`**.
+   - Il faut déposer le *contenu* du dossier et non le dossier lui-même ; sinon `index.html` se retrouverait dans un sous-dossier et GitHub Pages ne le trouverait pas.
+   - Glisser le dossier `assets` conserve son arborescence (`assets/my_photo.jpg`).
+4. Saisir un message de commit, par exemple `Initial commit: digital CV`, puis cliquer sur **Commit changes**.
+5. Vérifier dans la liste des fichiers que **`index.html` apparaît à la racine** et que le dossier `assets` contient bien `my_photo.jpg`.
+
+📷 *Capture d'écran à insérer : liste des fichiers du dépôt après l'envoi.*
+
+### 7.2 Activation de GitHub Pages
+
+1. Dans le dépôt, ouvrir l'onglet **Settings**.
+2. Dans le menu de gauche, cliquer sur **Pages**.
+3. Dans **Build and deployment**, choisir **Source : Deploy from a branch**.
+4. Dans **Branch**, sélectionner **`main`** et le dossier **`/ (root)`**, puis cliquer sur **Save**.
+5. Patienter une à quelques minutes. L'adresse du site s'affiche en haut de la page **Pages**, sous la forme :
+   `https://anas-barkallah.github.io/anas-barkallah-portfolio/`
+6. L'avancement de la publication est visible dans l'onglet **Actions** (workflow *pages build and deployment*).
+
+📷 *Capture d'écran à insérer : page Settings → Pages avec la branche `main` et le dossier `/ (root)`.*
+
+📷 *Capture d'écran à insérer : message indiquant que le site est en ligne.*
+
+## 8. Déploiement via Visual Studio Code
+
+### 8.1 Préparation
+
+1. Installer **Git** (https://git-scm.com) et **Visual Studio Code**.
+2. Configurer une seule fois son identité Git dans un terminal :
+
+```bash
+git config --global user.name "Anas Barkallah"
+git config --global user.email "ADRESSE-EMAIL-DU-COMPTE-GITHUB"
+```
+
+   (Remplacer `ADRESSE-EMAIL-DU-COMPTE-GITHUB` par l'adresse associée au compte GitHub.)
+
+### 8.2 Création du projet
+
+1. Créer un dossier `anas-barkallah-portfolio`.
+2. Dans VS Code : **File → Open Folder…** et sélectionner ce dossier.
+3. Créer les fichiers `index.html`, `style.css`, `script.js`, `README.md`, `rapport-technique.md`, puis le dossier `assets` contenant `my_photo.jpg`.
+4. Enregistrer tous les fichiers (**File → Save All** ou `Ctrl + K` puis `S`).
+5. Vérifier le rendu en ouvrant `index.html` dans le navigateur (ou avec l'extension *Live Server*).
+
+### 8.3 Versionnement et envoi
+
+1. Ouvrir le terminal intégré : **Terminal → New Terminal** (ou `` Ctrl + ` ``).
+2. Initialiser Git si le dossier n'est pas encore un dépôt :
+
+```bash
+git init
+git branch -M main
+```
+
+3. Relier le dossier local au dépôt GitHub :
+
+```bash
+git remote add origin https://github.com/anas-barkallah/anas-barkallah-portfolio.git
+```
+
+4. Ouvrir l'onglet **Source Control** (icône des branches, ou `Ctrl + Shift + G`) :
+   - les fichiers modifiés apparaissent dans **Changes** ;
+   - cliquer sur **+** (*Stage All Changes*) pour les indexer ;
+   - saisir un message, par exemple `Initial commit: digital CV`, puis cliquer sur **Commit** ;
+   - cliquer sur **Publish Branch** ou **Sync Changes** pour envoyer les commits vers GitHub.
+5. Lors du premier envoi, VS Code propose de se connecter à GitHub dans le navigateur : accepter et autoriser l'accès.
+6. Activer GitHub Pages comme décrit en **7.2** si ce n'est pas déjà fait.
+7. Vérifier sur GitHub que les fichiers sont présents, puis ouvrir l'adresse du site.
+
+📷 *Capture d'écran à insérer : onglet Source Control de VS Code avec le commit.*
+
+## 9. Déploiement via le terminal
+
+Toutes les commandes sont exécutées depuis le dossier du projet (`cd chemin/vers/anas-barkallah-portfolio`).
+
+### 9.1 Premier envoi
+
+```bash
+git init
+git status
+git add .
+git commit -m "Initial commit: digital CV"
+git branch -M main
+git remote add origin https://github.com/anas-barkallah/REPOSITORY-NAME.git
+git push -u origin main
+```
+
+| Commande | Rôle |
+|---|---|
+| `git init` | Transforme le dossier en dépôt Git local (à faire une seule fois). |
+| `git status` | Affiche l'état des fichiers : nouveaux, modifiés, indexés. |
+| `git add .` | Indexe tous les fichiers du dossier pour le prochain commit. |
+| `git commit -m "…"` | Enregistre un instantané des fichiers indexés avec un message. |
+| `git branch -M main` | Nomme la branche principale `main`. |
+| `git remote add origin URL` | Associe le dépôt local au dépôt GitHub sous le nom `origin`. |
+| `git push -u origin main` | Envoie la branche `main` vers GitHub et mémorise la liaison pour les envois suivants. |
+
+**Important :** `REPOSITORY-NAME` doit être remplacé par le nom réel du dépôt (par exemple `anas-barkallah-portfolio`).
+
+### 9.2 Vérifier ou corriger le dépôt distant
+
+La commande `git remote add origin` ne doit être exécutée **qu'une seule fois**. La relancer provoque l'erreur `remote origin already exists`. Pour vérifier ou corriger l'adresse :
+
+```bash
+git remote -v
+git remote set-url origin https://github.com/anas-barkallah/REPOSITORY-NAME.git
+```
+
+### 9.3 Authentification
+
+Depuis 2021, GitHub n'accepte plus le mot de passe du compte pour `git push` en HTTPS. Deux solutions :
+
+- utiliser **Git Credential Manager** (installé avec Git pour Windows), qui ouvre une fenêtre de connexion GitHub dans le navigateur lors du premier `push` ;
+- ou créer un **Personal Access Token** (GitHub → *Settings* → *Developer settings* → *Personal access tokens*) et le saisir à la place du mot de passe. Ce jeton est confidentiel et ne doit jamais être écrit dans un fichier du projet.
+
+📷 *Capture d'écran à insérer : terminal après un `git push` réussi.*
+
+## 10. Vérification du site en ligne
+
+Une fois le site publié, vérifier les points suivants :
+
+- [ ] l'adresse `https://anas-barkallah.github.io/REPOSITORY-NAME/` s'ouvre sans erreur 404 ;
+- [ ] la photo de profil s'affiche (le fichier `assets/my_photo.jpg` est bien présent dans le dépôt) ;
+- [ ] les styles sont appliqués (fond sombre, mise en page) : `style.css` est bien chargé ;
+- [ ] les boutons **FR / EN** traduisent toutes les sections ;
+- [ ] chaque lien du menu mène à la bonne section ;
+- [ ] sur téléphone (ou en réduisant la fenêtre), le menu mobile s'ouvre et se ferme ;
+- [ ] les liens GitHub et Discord s'ouvrent dans un nouvel onglet ;
+- [ ] l'année du pied de page correspond à l'année en cours ;
+- [ ] la console du navigateur (`F12` → *Console*) n'affiche aucune erreur.
+
+Une fois ces vérifications faites, reporter les liens réels du dépôt et du site dans le tableau en tête de ce rapport et dans le `README.md`.
+
+📷 *Capture d'écran à insérer : site en ligne avec l'adresse visible dans la barre du navigateur.*
+
+## 11. Mise à jour du site après publication
+
+À chaque nouveau commit sur la branche `main`, GitHub Pages republie automatiquement le site. La mise à jour est généralement visible au bout d'une à quelques minutes.
+
+**Remarque sur les textes bilingues :** les textes français figurent dans `index.html` et dans l'objet `translations.fr` de `script.js` ; les textes anglais figurent dans `translations.en`. Pour modifier une information, mettre à jour ces emplacements afin que les deux langues restent cohérentes.
+
+### 11.1 Depuis l'interface GitHub
+
+1. Ouvrir le fichier à modifier dans le dépôt (par exemple `index.html`).
+2. Cliquer sur l'icône **crayon** (*Edit this file*).
+3. Effectuer la modification (par exemple remplacer « Période à compléter » par les dates réelles d'une expérience).
+4. Cliquer sur **Commit changes…**, saisir un message explicite, puis valider.
+5. Suivre la republication dans l'onglet **Actions**, puis actualiser le site en ligne.
+
+Pour remplacer la photo : ouvrir le dossier `assets`, **Add file → Upload files**, déposer une nouvelle image portant **exactement** le nom `my_photo.jpg`, puis valider le commit.
+
+📷 *Capture d'écran à insérer : modification d'un fichier dans l'éditeur web de GitHub.*
+
+### 11.2 Depuis Visual Studio Code
+
+1. Récupérer d'abord les éventuelles modifications faites sur GitHub : **Source Control → … → Pull** (ou `git pull` dans le terminal).
+2. Modifier le fichier, puis l'enregistrer.
+3. Dans **Source Control**, indexer (**+**), saisir un message, cliquer sur **Commit**, puis **Sync Changes**.
+4. Vérifier le nouveau commit sur GitHub, puis le site en ligne.
+
+### 11.3 Depuis le terminal
+
+```bash
+git pull
+git status
+git add .
+git commit -m "Update digital CV"
+git push
+```
+
+`git pull` récupère les modifications faites ailleurs (par exemple depuis l'interface GitHub) afin d'éviter un refus lors du `push`.
+
+📷 *Capture d'écran à insérer : site en ligne après la mise à jour.*
+
+## 12. Problèmes fréquents et solutions
+
+| Problème | Cause probable | Solution |
+|---|---|---|
+| **Erreur 404** sur l'adresse GitHub Pages | `index.html` absent de la racine, mal nommé (`Index.html`, `index.htm`), ou Pages non activé | Vérifier que `index.html` est à la racine et en minuscules ; vérifier *Settings → Pages* (branche `main`, dossier `/ (root)`). |
+| **Page affichée sans mise en forme** | Chemin vers `style.css` incorrect | Utiliser un chemin relatif `href="style.css"` (pas de `/` au début, pas de chemin du type `C:\…`). |
+| **Photo absente** | Fichier non envoyé, mauvais dossier ou casse différente (`My_Photo.JPG`) | Vérifier la présence de `assets/my_photo.jpg` sur GitHub et la correspondance exacte avec `src="assets/my_photo.jpg"`. |
+| **Site non mis à jour** | Publication en cours ou cache du navigateur | Attendre quelques minutes, consulter l'onglet *Actions*, actualiser avec `Ctrl + F5` ou ouvrir une fenêtre privée. |
+| `remote origin already exists` | `git remote add` exécuté une deuxième fois | `git remote -v` pour vérifier, puis `git remote set-url origin URL` pour corriger. |
+| `Authentication failed` / `Support for password authentication was removed` | Utilisation du mot de passe du compte | Se connecter via Git Credential Manager ou utiliser un *Personal Access Token*. |
+| `failed to push some refs` / `rejected (fetch first)` | Le dépôt distant contient des commits absents en local (par exemple un README créé sur GitHub) | `git pull origin main`, résoudre les éventuels conflits, puis `git push`. Pour un premier envoi avec historiques distincts : `git pull origin main --allow-unrelated-histories`. |
+| `src refspec main does not match any` | Aucun commit encore créé, ou branche nommée autrement | Faire `git add .` puis `git commit`, et vérifier le nom de la branche avec `git branch`. |
+| `fatal: not a git repository` | Commande lancée hors du dossier du projet ou `git init` non effectué | Se placer dans le bon dossier (`cd …`) ou exécuter `git init`. |
+| Option Pages indisponible | Dépôt privé sur un compte gratuit | Passer le dépôt en **Public** (*Settings → General → Danger Zone → Change visibility*). |
+
+## 13. Conclusion
+
+Ce projet m'a permis de réaliser un CV numérique sous forme de site statique, de le versionner avec Git et de le publier gratuitement avec GitHub Pages. J'ai pu comparer trois façons de travailler : l'interface web de GitHub, pratique pour des modifications rapides ; Visual Studio Code, qui réunit l'édition du code et la gestion de Git ; et le terminal, qui donne un contrôle précis sur chaque étape.
+
+J'ai également appris l'importance de détails concrets du déploiement : position du fichier `index.html` à la racine, chemins relatifs, respect de la casse des noms de fichiers, authentification et délai de publication.
+
+Le site reste facile à faire évoluer : il suffit de modifier un fichier et de publier un nouveau commit pour que la version en ligne soit mise à jour. Les informations marquées « à compléter » (dates, e-mail, baccalauréat, lien du projet WiFi-Channel-Monitor) pourront être ajoutées au fur et à mesure.
